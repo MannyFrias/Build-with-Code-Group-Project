@@ -63,3 +63,16 @@ const hardQuestions = [
     answer: false,
   },
 ];
+
+const countDown = (time) => {
+  if (time < 0) {
+    console.log(`Time Remaining: ${time}`);
+    // RECURSION
+    // setTimeout calls fucntion again after 1 second
+    setTimeout(() => {
+      countDown(time - 1);
+    }, 1000);
+  } else {
+    console.log("Time's up!");
+  }
+};
