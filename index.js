@@ -64,17 +64,56 @@ const hardQuestions = [
   },
 ];
 
-const countDown = (time) => {
-  if (time > 0) {
-    console.log(`Time Remaining: ${time}`);
-    // RECURSION
-    // setTimeout calls fucntion again after 1 second
-    setTimeout(() => {
-      countDown(time - 1);
-    }, 1000);
-  } else {
-    console.log("Time's up!");
-  }
-};
+function showStartMenu() {
+  alert("Welcome to the Game!");
 
-countDown(10);
+  let choice = prompt(
+    "MAIN MENU\n\n1. Start Game\n2. Exit\n\nEnter your choice (1-2):"
+  );
+
+  if (choice === null) {
+    alert("Thanks for visiting!");
+    return;
+  }
+
+  if (choice === "1") {
+    startGame();
+  } else if (choice === "2") {
+    alert("Thanks for playing!");
+  } else {
+    alert("Invalid choice! Please try again.");
+    showStartMenu();
+  }
+}
+
+function startGame() {
+  alert("Welcome to the trivia!");
+
+  let difficulty = prompt(
+    "Choose difficulty:\n\n1. Easy\n2. Hard\n\nEnter your choice (1-2):"
+  );
+  if (difficulty === null) {
+    alert("Game cancelled!");
+    if (confirm("Return to main menu?")) {
+      showStartMenu();
+    }
+    return;
+  }
+  if (difficulty === "1") {
+    alert("Easy mode selected! Get ready for 5 questions.");
+    // easy questions logic will go here
+  } else if (difficulty === "2") {
+    alert("Hard mode selected! Prepare for challenging questions!");
+    // hard questions logic will go here
+  } else {
+    alert("Invalid choice! Please try again.");
+    return startGame();
+  }
+
+  // if the game ends
+  if (confirm("Game finished! Return to main menu?")) {
+    showStartMenu();
+  }
+}
+
+showStartMenu();
