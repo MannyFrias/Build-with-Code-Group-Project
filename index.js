@@ -16,18 +16,18 @@ const easyQuestions = [
   {
     question: `"What is the official name for the “prove you’re not a robot” tests that websites sometimes require"`,
     choices: ["FunCaptcha", "hCaptcha", "ALTCHA", "CAPTCHAs"],
-    answer: CAPTCHAs, // 3
+    answer: "CAPTCHAs", // 3
   },
   {
     question:
       "What software development hosting company has an Octocat for the logo?What software development hosting company has an Octocat for the logo?",
     choices: ["Source Forge", "GitHub", "Godegiant", "Beanstalk"],
-    answer: Github, // 1
+    answer: "Github", // 1
   },
   {
     question: "What app has a green owl as the mascot?",
     choices: ["Parakeet", "Twitter", "Duolingo", "eBird"],
-    answer: Duolingo, // 2
+    answer: "Duolingo", // 2
   },
 ];
 
@@ -65,7 +65,7 @@ const hardQuestions = [
 ];
 
 const countDown = (time) => {
-  if (time < 0) {
+  if (time > 0) {
     console.log(`Time Remaining: ${time}`);
     // RECURSION
     // setTimeout calls fucntion again after 1 second
@@ -76,3 +76,5 @@ const countDown = (time) => {
     console.log("Time's up!");
   }
 };
+
+countDown(10);
