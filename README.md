@@ -1,22 +1,23 @@
-# Build with code project
+# -------------- Build with code project ---------------
 
-## Trivia (Might need Front-End)
+## Trivia
 
 “We’re building a trivia that lets a user answer questions so they can test their CS knowledge.”
 
-## Members:
+## Members: --------------------------------------------
 
 1. Sarah
 2. Sofia
 3. Denalo
 4. Manny
 
-## Dependencies
+## Dependencies ------------------------------------------
 
 - ESLint
 - Prettier
-- node
 
-## install
+## install -----------------------------------------------
 
-### npm i
+- npm i
+
+## Examples ----------------------------------------------
