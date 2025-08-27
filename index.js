@@ -1,3 +1,4 @@
+import { counter, livesHandled } from "./score_lives_tracker";
 //starting page
 
 //questions & answers
