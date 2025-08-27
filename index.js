@@ -102,9 +102,11 @@ function startGame() {
   if (difficulty === "1") {
     alert("Easy mode selected! Get ready for 5 questions.");
     // easy questions logic will go here
+    GameQuestions(easyQuestions);
   } else if (difficulty === "2") {
     alert("Hard mode selected! Prepare for challenging questions!");
     // hard questions logic will go here
+    GameQuestions(hardQuestions);
   } else {
     alert("Invalid choice! Please try again.");
     return startGame();
@@ -115,5 +117,8 @@ function startGame() {
     showStartMenu();
   }
 }
+
+
+
 
 showStartMenu();
