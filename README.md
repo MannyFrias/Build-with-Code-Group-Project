@@ -2,14 +2,14 @@
 
 ## Trivia
 
-“We’re building a trivia that lets a user answer questions so they can test their CS knowledge.”
+“A trivia prompt-based website that lets users answer questions so they can test their CS knowledge.”
 
 ## Members: --------------------------------------------
 
-1. Sarah
-2. Sofia
-3. Denalo
-4. Manny
+1. Sofia
+2. Denalo
+3. Manny
+4. Sarah 
 
 ## Dependencies ------------------------------------------
 
@@ -20,9 +20,13 @@
 
 - npm i
 
-## Examples ----------------------------------------------
-(To Edit Later) 
-Have a screenshot of the beginning prompt of the game
-Have the rules of a player needing to answer all 5 questions correctly with at least one life to win the game. 
-If the player loses all their lives and/or has their score reach 0, the game automatically resets back to the beginning 
-State that all of the code was vanilla JS 
+## Rules ----------------------------------------------
+A simple triva game built entirely with vanilla JavaScript to work on your browser. 
+
+Game Rules
+1. You have the option to pick easy or difficult levels. 
+2. Try your best to answer all 5 questions correctly, with the 3 lives provided. 
+
+Lives & Score
+1. Every wrong answer costs you a life.
+2. If you lose all lives OR your score drops to 0, the game automatically resets to the beginning.
