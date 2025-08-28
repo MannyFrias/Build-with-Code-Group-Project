@@ -6,6 +6,7 @@
 
 (A simple triva game built entirely with vanilla JavaScript to work on your browser.) 
 
+<img width="1280" height="1258" alt="Javascript Code" src="https://github.com/user-attachments/assets/ff058839-77af-456f-8639-2c43429c66dc" />
 ## Members: --------------------------------------------
 
 1. Sofia
